@@ -1,9 +1,8 @@
-Problem 2: Count Vowels in a String
-Description: Write a program to count the number of vowels in a given string.
+Problem 3: Remove Duplicates from a String
+Description: Write a program to remove duplicate characters from a string.
 
-def count_vowels(input_string):
-    vowels = "aeiouAEIOU"
-    return sum(1 for char in input_string if char in vowels)
+def remove_duplicates(input_string):
+    return "".join(sorted(set(input_string), key=input_string.index))
 
 # Example usage
-print(count_vowels("hello world"))
+print(remove_duplicates("banana"))
